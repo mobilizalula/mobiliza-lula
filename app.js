@@ -1,12 +1,6 @@
-const map = L.map('map', { zoomControl: false, attributionControl: false }).setView([-22.9068, -43.1729], 12);
-L.control.zoom({ position: 'topright' }).addTo(map);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19
-}).addTo(map);
-
+let map = null;
 let todosProtestos = [];
-let marcadores = L.featureGroup().addTo(map);
+let marcadores = null;
 
 const iconeEstrelaVermelha = L.divIcon({
     className: 'custom-star-marker',
@@ -50,10 +44,9 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
 function renderizarLista(protestosParaRenderizar) {
     const listaDiv = document.getElementById('lista-protestos');
     listaDiv.innerHTML = '';
-    marcadores.clearLayers(); 
+    if (marcadores) marcadores.clearLayers(); 
 
     const agora = new Date();
-
     const dataHojeZero = new Date(agora.getFullYear(), agora.getMonth(), agora.getDate());
     
     const protestosAtivos = protestosParaRenderizar.filter(local => {
@@ -79,33 +72,55 @@ function renderizarLista(protestosParaRenderizar) {
 
         const dataHoraEvento = new Date(`${local.data}T${local.hora}:00`);
         const jaPassou = agora > dataHoraEvento;
-
         const iconeAtual = jaPassou ? iconeEstrelaCinza : iconeEstrelaVermelha;
 
         const marker = L.marker([local.lat, local.lng], { icon: iconeAtual });
         
         const statusTextoPopup = jaPassou ? " [EM ANDAMENTO / PASSADO]" : "";
         marker.bindPopup(`<div class="font-bold text-lg">${local.titulo}${statusTextoPopup}</div><div>${dataFormatada}</div>`);
-        marcadores.addLayer(marker);
+        
+        // Caminho inverso: Clicar na estrela do mapa rola até o card correspondente na lista e fecha o modal
+        marker.on('click', () => {
+            fecharModalMapa();
+            const cardEl = document.getElementById(`card-protesto-${local.id}`);
+            if (cardEl) {
+                cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                cardEl.classList.add('ring-4', 'ring-yellow-400');
+                setTimeout(() => {
+                    cardEl.classList.remove('ring-4', 'ring-yellow-400');
+                }, 1500);
+            }
+        });
+
+        if (marcadores) marcadores.addLayer(marker);
 
         let botaoLinkHtml = '';
         if (local.link && local.link !== "N/A" && local.link.trim() !== "") {
             botaoLinkHtml = `
-                <a href="${local.link}" target="_blank" onclick="event.stopPropagation()" class="mt-3 block text-center bg-black text-white text-xs font-bold py-2 px-4 border-2 border-black hover:bg-red-700 transition-colors">
-                    LINK PARA O POST
+                <a href="${local.link}" target="_blank" onclick="event.stopPropagation()" class="mt-2 block text-center bg-black text-white text-xs font-bold py-2 px-4 border-2 border-black hover:bg-red-700 transition-colors">
+                    ACESSAR POST ORIGINAL
                 </a>
             `;
         }
 
         const card = document.createElement('div');
+        card.id = `card-protesto-${local.id}`;
         
         const classesCard = jaPassou 
-            ? "p-5 bg-slate-200 opacity-75 border-4 border-black sombra-dura cursor-pointer transition-all" 
-            : "p-5 bg-white border-4 border-black sombra-dura cursor-pointer transition-all";
+            ? "p-5 bg-slate-200 opacity-75 border-4 border-black sombra-dura transition-all" 
+            : "p-5 bg-white border-4 border-black sombra-dura transition-all";
             
         card.className = classesCard;
         
         const badgePassado = jaPassou ? `<span class="text-xs bg-slate-700 text-white px-2 py-0.5 ml-2 font-bold">JÁ INICIOU</span>` : '';
+
+        card.onclick = () => {
+            abrirModalMapa();
+            if (map) {
+                map.flyTo([local.lat, local.lng], 16, { duration: 1.2 });
+                marker.openPopup();
+            }
+        };
 
         card.innerHTML = `
             <div class="mb-3 border-b-2 border-black pb-2">
@@ -119,14 +134,37 @@ function renderizarLista(protestosParaRenderizar) {
             <p class="text-black font-medium text-md mt-2 leading-tight normal-case">${local.descricao}</p>
             ${botaoLinkHtml}
         `;
-        
-        card.onclick = () => {
-            map.flyTo([local.lat, local.lng], 16, { duration: 1.5 });
-            marker.openPopup();
-        };
 
         listaDiv.appendChild(card);
     });
+}
+
+function abrirModalMapa() {
+    const modal = document.getElementById('modal-mapa');
+    modal.classList.remove('hidden');
+    
+    if (!map) {
+        map = L.map('map', { zoomControl: false, attributionControl: false }).setView([-22.9068, -43.1729], 11);
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19
+        }).addTo(map);
+
+        marcadores = L.featureGroup().addTo(map);
+        renderizarLista(todosProtestos);
+    } else {
+        map.invalidateSize();
+    }
+
+    if (marcadores && marcadores.getLayers().length > 0) {
+        map.fitBounds(marcadores.getBounds(), { padding: [40, 40] });
+    }
+}
+
+function fecharModalMapa() {
+    const modal = document.getElementById('modal-mapa');
+    modal.classList.add('hidden');
 }
 
 function filtrarHoje() {
@@ -142,10 +180,6 @@ function filtrarHoje() {
     document.getElementById('nome-bairro-selecionado').innerText = "ATOS DE HOJE";
     
     renderizarLista(protestosHoje);
-
-    if (protestosHoje.length > 0) {
-        map.fitBounds(marcadores.getBounds(), { padding: [50, 50] });
-    }
 }
 
 function acharMaisPerto() {
@@ -169,7 +203,13 @@ function acharMaisPerto() {
             document.getElementById('filtro-bairro').classList.remove('hidden');
             document.getElementById('nome-bairro-selecionado').innerText = "MAIS PRÓXIMO DE VOCÊ";
             renderizarLista([maisPerto]); 
-            map.flyTo([maisPerto.lat, maisPerto.lng], 16);
+            
+            abrirModalMapa();
+            setTimeout(() => {
+                if (map) {
+                    map.flyTo([maisPerto.lat, maisPerto.lng], 16);
+                }
+            }, 300);
             
             L.circleMarker([userLat, userLng], { color: '#000', weight: 6, fillColor: '#fff', fillOpacity: 1, radius: 8 })
              .addTo(map)
@@ -182,7 +222,6 @@ function acharMaisPerto() {
 function limparFiltro() {
     document.getElementById('filtro-bairro').classList.add('hidden');
     renderizarLista(todosProtestos);
-    map.setView([-22.9068, -43.1729], 12);
 }
 
 async function inicializar() {
