@@ -265,6 +265,42 @@
   },
   {
     "id": 23,
+    "titulo": "PLENÁRIA DE MOBILIZAÇÃO - TIJUCA",
+    "bairro": "Maracanã, Rio de Janeiro",
+    "endereco": "Rua Morais e Silva, 94 - Maracanã, Rio de Janeiro",
+    "data": "2026-10-09",
+    "hora": "18:00",
+    "descricao": "SINTTEL.",
+    "link": "N/A",
+    "lat": -22.9142,
+    "lng": -43.2215
+  },
+  {
+    "id": 24,
+    "titulo": "BANDEIRAÇO DO TRABALHADOR E DA TRABALHADORA",
+    "bairro": "Ilha do Governador, Rio de Janeiro",
+    "endereco": "Chafariz da Portuguesa, em frente ao Hospital Evandro Freire - Ilha do Governador",
+    "data": "2026-10-09",
+    "hora": "17:00",
+    "descricao": "Bandeiraço do Trabalhador e da Trabalhadora.",
+    "link": "N/A",
+    "lat": -22.8080,
+    "lng": -43.1950
+  },
+  {
+    "id": 25,
+    "titulo": "ILHA COM LULA - ENCONTRO UNIFICADO",
+    "bairro": "Ilha do Governador, Rio de Janeiro",
+    "endereco": "Aterro do Cocotá, Pista de Skate - Ilha do Governador",
+    "data": "2026-10-09",
+    "hora": "19:00",
+    "descricao": "Encontro unificado na pista de skate.",
+    "link": "N/A",
+    "lat": -22.8050,
+    "lng": -43.1650
+  },
+  {
+    "id": 26,
     "titulo": "PANFLETAGEM E CONVERSA COM A POPULAÇÃO",
     "bairro": "Centro, Nova Iguaçu",
     "endereco": "Avenida Governador Amaral Peixoto, 156 - Centro, Nova Iguaçu",
@@ -276,7 +312,7 @@
     "lng": -43.4580
   },
   {
-    "id": 24,
+    "id": 27,
     "titulo": "CAMINHADA E BANDEIRAÇO NO AEROPORTO",
     "bairro": "Macaé",
     "endereco": "R. Ten. Francisco Píres, 77 - Parque Aeroporto, Macaé",
@@ -288,7 +324,7 @@
     "lng": -41.7650
   },
   {
-    "id": 25,
+    "id": 28,
     "titulo": "ATO MUDA BXD",
     "bairro": "São Bernardo, Belford Roxo",
     "endereco": "Avenida Joaquim da Costa Lima, 3250 - São Bernardo, Belford Roxo",
@@ -300,7 +336,7 @@
     "lng": -43.3995
   },
   {
-    "id": 26,
+    "id": 29,
     "titulo": "PLENÁRIA DE ORGANIZAÇÃO DA CAMPANHA DO PRESIDENTE LULA",
     "bairro": "Santa Cruz, Rio de Janeiro",
     "endereco": "Av. Padre Guilherme Decaminada, 1825 - Santa Cruz, Rio de Janeiro",
@@ -312,7 +348,163 @@
     "lng": -43.6854
   },
   {
-    "id": 27,
+    "id": 30,
+    "titulo": "MOBILIZAÇÃO NO LARGO DO BAIRRO DE FÁTIMA",
+    "bairro": "Centro, Rio de Janeiro",
+    "endereco": "Largo do Bairro de Fátima - Centro, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "11:00",
+    "descricao": "Largo do Bairro de Fátima.",
+    "link": "N/A",
+    "lat": -22.9130,
+    "lng": -43.1850
+  },
+  {
+    "id": 31,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DA RIBEIRA",
+    "bairro": "Ilha do Governador, Rio de Janeiro",
+    "endereco": "Feira da Ribeira - Ilha do Governador",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Feira da Ribeira.",
+    "link": "N/A",
+    "lat": -22.8120,
+    "lng": -43.1800
+  },
+  {
+    "id": 32,
+    "titulo": "MOBILIZAÇÃO NO MUNDIAL DO TAUÁ",
+    "bairro": "Ilha do Governador, Rio de Janeiro",
+    "endereco": "Supermercado Mundial - Tauá, Ilha do Governador",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Em frente ao Mundial do Tauá.",
+    "link": "N/A",
+    "lat": -22.8150,
+    "lng": -43.1900
+  },
+  {
+    "id": 33,
+    "titulo": "MOBILIZAÇÃO NA TAQUARA (LANCHEMANIA)",
+    "bairro": "Taquara, Rio de Janeiro",
+    "endereco": "LancheMania - Taquara, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Taquara (LancheMania).",
+    "link": "N/A",
+    "lat": -22.9250,
+    "lng": -43.3700
+  },
+  {
+    "id": 34,
+    "titulo": "MOBILIZAÇÃO NA PRAÇA DAS NAÇÕES",
+    "bairro": "Bonsucesso, Rio de Janeiro",
+    "endereco": "Praça das Nações - Bonsucesso, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Praça das Nações, Bonsucesso.",
+    "link": "N/A",
+    "lat": -22.8680,
+    "lng": -43.2450
+  },
+  {
+    "id": 35,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DO ENGENHO DA RAINHA",
+    "bairro": "Engenho da Rainha, Rio de Janeiro",
+    "endereco": "Feira do Engenho da Rainha - Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Feira do Engenho da Rainha.",
+    "link": "N/A",
+    "lat": -22.8800,
+    "lng": -43.2900
+  },
+  {
+    "id": 36,
+    "titulo": "CALÇADA DA RESISTÊNCIA",
+    "bairro": "Méier, Rio de Janeiro",
+    "endereco": "Rua Dias da Cruz - Méier, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Em frente ao Shopping do Méier na Dias da Cruz.",
+    "link": "N/A",
+    "lat": -22.9020,
+    "lng": -43.2820
+  },
+  {
+    "id": 37,
+    "titulo": "MOBILIZAÇÃO SHOPPING DOS PEIXINHOS",
+    "bairro": "Madureira, Rio de Janeiro",
+    "endereco": "Shopping dos Peixinhos - Madureira, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Shopping dos Peixinhos, Madureira.",
+    "link": "N/A",
+    "lat": -22.8750,
+    "lng": -43.3450
+  },
+  {
+    "id": 38,
+    "titulo": "MOBILIZAÇÃO NO LARGO DO MACHADO",
+    "bairro": "Catete, Rio de Janeiro",
+    "endereco": "Largo do Machado - Catete, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Largo do Machado.",
+    "link": "N/A",
+    "lat": -22.9280,
+    "lng": -43.1780
+  },
+  {
+    "id": 39,
+    "titulo": "MOBILIZAÇÃO NA SAENS PEÑA",
+    "bairro": "Tijuca, Rio de Janeiro",
+    "endereco": "Praça Saens Peña - Tijuca, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Esquina da Resistência em frente ao Banco do Brasil, na Saens Peña.",
+    "link": "N/A",
+    "lat": -22.9245,
+    "lng": -43.2325
+  },
+  {
+    "id": 40,
+    "titulo": "MOBILIZAÇÃO EM VILA ISABEL",
+    "bairro": "Vila Isabel, Rio de Janeiro",
+    "endereco": "Boulevard 28 de Setembro - Vila Isabel, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Em frente ao Petisco da Vila.",
+    "link": "N/A",
+    "lat": -22.9150,
+    "lng": -43.2450
+  },
+  {
+    "id": 41,
+    "titulo": "MOBILIZAÇÃO NA PRAÇA DOS CAVALINHOS",
+    "bairro": "Muda, Rio de Janeiro",
+    "endereco": "Praça dos Cavalinhos - Muda, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "10:00",
+    "descricao": "Praça dos Cavalinhos, Muda.",
+    "link": "N/A",
+    "lat": -22.9350,
+    "lng": -43.2500
+  },
+  {
+    "id": 42,
+    "titulo": "MOBILIZAÇÃO NO GRÊMIO DE ROCHA MIRANDA",
+    "bairro": "Rocha Miranda, Rio de Janeiro",
+    "endereco": "Avenida dos Italianos, 282 - Rocha Miranda, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "13:00",
+    "descricao": "Grêmio de Rocha Miranda.",
+    "link": "N/A",
+    "lat": -22.8450,
+    "lng": -43.3400
+  },
+  {
+    "id": 43,
     "titulo": "ATO MUDA BXD - SÃO JOÃO DE MERITI",
     "bairro": "Centro, São João de Meriti",
     "endereco": "Praça Getúlio Vargas - Centro, São João de Meriti",
@@ -324,7 +516,7 @@
     "lng": -43.3725
   },
   {
-    "id": 28,
+    "id": 44,
     "titulo": "PRIMAVERA COM LULA",
     "bairro": "Flamengo, Rio de Janeiro",
     "endereco": "Praia do Flamengo, 300, Flamengo, Rio de Janeiro - RJ",
@@ -336,7 +528,19 @@
     "lng": -43.1771
   },
   {
-    "id": 29,
+    "id": 45,
+    "titulo": "MOBILIZAÇÃO NA PRAÇA DO RIO COMPRIDO",
+    "bairro": "Rio Comprido, Rio de Janeiro",
+    "endereco": "Praça Américo Vespúcio - Rio Comprido, Rio de Janeiro",
+    "data": "2026-10-10",
+    "hora": "14:00",
+    "descricao": "Praça do Rio Comprido.",
+    "link": "N/A",
+    "lat": -22.9150,
+    "lng": -43.2050
+  },
+  {
+    "id": 46,
     "titulo": "MOBILIZAÇÃO RODOVIÁRIA VELHA",
     "bairro": "Duque de Caxias",
     "endereco": "Avenida Presidente Kennedy - Centro, Duque de Caxias",
@@ -348,7 +552,7 @@
     "lng": -43.3100
   },
   {
-    "id": 30,
+    "id": 47,
     "titulo": "SLAM DAS MINAS RJ POR LULA",
     "bairro": "Centro, Rio de Janeiro",
     "endereco": "Praça Floriano, Cinelândia - Centro, Rio de Janeiro",
@@ -360,7 +564,7 @@
     "lng": -43.1754
   },
   {
-    "id": 31,
+    "id": 48,
     "titulo": "CAMINHADA PELOS BAIRROS DE CACHOEIRAS",
     "bairro": "Centro, Cachoeiras de Macacu",
     "endereco": "Av. Floriano Peixoto, 225 - Centro, Cachoeiras de Macacu",
@@ -372,7 +576,7 @@
     "lng": -42.6534
   },
   {
-    "id": 32,
+    "id": 49,
     "titulo": "CAMINHADA NA FEIRA: VIRA VOTO PARA O LULA 13",
     "bairro": "Centro, Itaguaí",
     "endereco": "Rua do Trapiche, Antiga Estação Ferroviária - Centro, Itaguaí",
@@ -384,7 +588,7 @@
     "lng": -43.7766
   },
   {
-    "id": 33,
+    "id": 50,
     "titulo": "GRANDE CAMINHADA: NITERÓI É LULA PRESIDENTE",
     "bairro": "Icaraí, Niterói",
     "endereco": "R. Miguel de Frias, 9 - Icaraí, Niterói",
@@ -396,7 +600,127 @@
     "lng": -43.1250
   },
   {
-    "id": 34,
+    "id": 51,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DA CACUIA",
+    "bairro": "Ilha do Governador, Rio de Janeiro",
+    "endereco": "Feira da Cacuia - Ilha do Governador, Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feira da Cacuia.",
+    "link": "N/A",
+    "lat": -22.8100,
+    "lng": -43.1950
+  },
+  {
+    "id": 52,
+    "titulo": "MOBILIZAÇÃO NA FEIRINHA DO COCOTÁ",
+    "bairro": "Ilha do Governador, Rio de Janeiro",
+    "endereco": "Feirinha do Cocotá - Ilha do Governador, Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feirinha do Cocotá.",
+    "link": "N/A",
+    "lat": -22.8050,
+    "lng": -43.1650
+  },
+  {
+    "id": 53,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DA PRAÇA SECA",
+    "bairro": "Praça Seca, Rio de Janeiro",
+    "endereco": "Praça Seca - Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feira da Praça Seca.",
+    "link": "N/A",
+    "lat": -22.8900,
+    "lng": -43.3500
+  },
+  {
+    "id": 54,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DA PRAÇA DO Ó",
+    "bairro": "Barra da Tijuca, Rio de Janeiro",
+    "endereco": "Praça do Ó - Barra da Tijuca, Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feira da Praça do Ó (Barra).",
+    "link": "N/A",
+    "lat": -23.0010,
+    "lng": -43.3300
+  },
+  {
+    "id": 55,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DE INHAÚMA",
+    "bairro": "Inhaúma, Rio de Janeiro",
+    "endereco": "Feira de Inhaúma - Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feira de Inhaúma.",
+    "link": "N/A",
+    "lat": -22.8800,
+    "lng": -43.2750
+  },
+  {
+    "id": 56,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DA PENHA",
+    "bairro": "Penha, Rio de Janeiro",
+    "endereco": "Feira da Penha - Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feira da Penha.",
+    "link": "N/A",
+    "lat": -22.8450,
+    "lng": -43.2750
+  },
+  {
+    "id": 57,
+    "titulo": "MOBILIZAÇÃO NO ATERRO DO FLAMENGO (POSTO 2)",
+    "bairro": "Flamengo, Rio de Janeiro",
+    "endereco": "Aterro do Flamengo, Posto 2 - Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Aterro do Flamengo, Posto 2.",
+    "link": "N/A",
+    "lat": -22.9350,
+    "lng": -43.1750
+  },
+  {
+    "id": 58,
+    "titulo": "MOBILIZAÇÃO NA PRAÇA EDMUNDO REGO",
+    "bairro": "Grajaú, Rio de Janeiro",
+    "endereco": "Praça Edmundo Rego - Grajaú, Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Praça Edmundo Rego, em frente à Igreja Católica.",
+    "link": "N/A",
+    "lat": -22.9200,
+    "lng": -43.2650
+  },
+  {
+    "id": 59,
+    "titulo": "MOBILIZAÇÃO NA FEIRA DO ANDARAÍ",
+    "bairro": "Andaraí, Rio de Janeiro",
+    "endereco": "Feira do Andaraí - Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "descricao": "Feira do Andaraí.",
+    "link": "N/A",
+    "lat": -22.9200,
+    "lng": -43.2500
+  },
+  {
+    "id": 60,
+    "titulo": "MOBILIZAÇÃO NA ESTAÇÃO DE METRÔ DA GLÓRIA",
+    "bairro": "Glória, Rio de Janeiro",
+    "endereco": "Estação de Metrô da Glória - Rio de Janeiro",
+    "data": "2026-10-11",
+    "hora": "11:00",
+    "descricao": "Estação de Metrô da Glória. Ponto de encontro: ao lado da Drogaria Pacheco.",
+    "link": "N/A",
+    "lat": -22.9150,
+    "lng": -43.1780
+  },
+  {
+    "id": 61,
     "titulo": "MOVIMENTO UNIFICADO ESTUDANTIL",
     "bairro": "Bacaxá, Saquarema",
     "endereco": "Rua Prof. Souza, 312 - Bacaxá, Saquarema",
@@ -408,7 +732,7 @@
     "lng": -42.4667
   },
   {
-    "id": 35,
+    "id": 62,
     "titulo": "BORA LULA BANDEIRAÇO",
     "bairro": "Recreio, Rio de Janeiro",
     "endereco": "Praia do Recreio, Posto 12 - Recreio, Rio de Janeiro",
@@ -420,7 +744,7 @@
     "lng": -43.4736
   },
   {
-    "id": 36,
+    "id": 63,
     "titulo": "MARCHA PELO DIREITO DOS TRABALHADORES",
     "bairro": "Centro, Niterói",
     "endereco": "Rua Alexandre Moura, 2A — São Domingos, Niterói",
@@ -432,7 +756,7 @@
     "lng": -43.1270
   },
   {
-    "id": 37,
+    "id": 64,
     "titulo": "POVO NA RUA A LUTA CONTINUA",
     "bairro": "Copacabana, Rio de Janeiro",
     "endereco": "Av. Atlântica - Copacabana, Rio de Janeiro",
@@ -444,7 +768,7 @@
     "lng": -43.1900
   },
   {
-    "id": 38,
+    "id": 65,
     "titulo": "SAÚDE COM LULA",
     "bairro": "São Cristóvão, Rio de Janeiro",
     "endereco": "Quinta da Boa Vista - São Cristóvão, Rio de Janeiro",
@@ -456,7 +780,7 @@
     "lng": -43.2223
   },
   {
-    "id": 39,
+    "id": 66,
     "titulo": "O SAMBA NÃO SE CALA A LUTA É NA RUA",
     "bairro": "Lapa, Rio de Janeiro",
     "endereco": "Praça Cardeal Câmara, s/n, Lapa - Centro, Rio de Janeiro",
@@ -468,7 +792,7 @@
     "lng": -43.1795
   },
   {
-    "id": 40,
+    "id": 67,
     "titulo": "ROCK BOLHA: JUVENTUDE ANTIFASCISMO",
     "bairro": "Centro, Nilópolis",
     "endereco": "Praça Ver. Orlando Hungria - Centro, Nilópolis",
@@ -480,7 +804,7 @@
     "lng": -43.4130
   },
   {
-    "id": 41,
+    "id": 68,
     "titulo": "CAMINHADA DO MÉIER PELA DEMOCRACIA",
     "bairro": "Meier, Rio de Janeiro",
     "endereco": "Terminal Américo Ayres - Méier, Rio de Janeiro",
@@ -492,7 +816,7 @@
     "lng": -43.2798
   },
   {
-    "id": 42,
+    "id": 69,
     "titulo": "PLENÁRIA 'UFRJ COM LULA'",
     "bairro": "Ilha do Fundão, Rio de Janeiro",
     "endereco": "Av. Horácio de Macedo, 2151 - Cidade Universitária, RJ",
@@ -504,7 +828,7 @@
     "lng": -43.2285
   },
   {
-    "id": 43,
+    "id": 70,
     "titulo": "MACAÉ COM LULA",
     "bairro": "Centro, Macaé",
     "endereco": "Praça Veríssimo de Melo, Centro, Macaé",
@@ -516,7 +840,7 @@
     "lng": -41.7760
   },
   {
-    "id": 44,
+    "id": 71,
     "titulo": "CAMINHADA BORA LULA",
     "bairro": "Centro, Rio das Ostras",
     "endereco": "Rod. Amaral Peixoto, 4568-4576 - Balneário Remanso, Rio das Ostras",
@@ -528,7 +852,7 @@
     "lng": -41.9450
   },
   {
-    "id": 45,
+    "id": 72,
     "titulo": "ATIVIDADE ESTUDANTIL - UFRJ",
     "bairro": "Rio de Janeiro",
     "endereco": "Cidade Universitária, Ilha do Fundão",
@@ -540,7 +864,7 @@
     "lng": -43.2300
   },
   {
-    "id": 46,
+    "id": 73,
     "titulo": "PASSEATA FORA EXTREMA DIREITA",
     "bairro": "Campo Grande, Rio de Janeiro",
     "endereco": "Estr. do Mendanha, 555 - Campo Grande, Rio de Janeiro",
@@ -552,7 +876,7 @@
     "lng": -43.5590
   },
   {
-    "id": 47,
+    "id": 74,
     "titulo": "ATO EM BANGU, A ZONA OESTE NÃO PODE SE CALAR",
     "bairro": "Bangu, Rio de Janeiro",
     "endereco": "R. Santa Cecília, 869-877 - Bangu, Rio de Janeiro",
@@ -564,7 +888,7 @@
     "lng": -43.4678
   },
   {
-    "id": 48,
+    "id": 75,
     "titulo": "VAMOS OCUPAR AS RUAS!",
     "bairro": "Centro, Rio de Janeiro",
     "endereco": "Praça Pio X - Centro, Rio de Janeiro - RJ",
@@ -576,7 +900,7 @@
     "lng": -43.1775
   },
   {
-    "id": 49,
+    "id": 76,
     "titulo": "BAIXADA RESISTENTE",
     "bairro": "Centro, Nova Iguaçu",
     "endereco": "Avenida Doutor Luiz Guimarães - Centro, Nova Iguaçu",
@@ -588,7 +912,7 @@
     "lng": -43.4607
   },
   {
-    "id": 50,
+    "id": 77,
     "titulo": "PROTESTO ESTUDANTIL",
     "bairro": "Campo Grande, Rio de Janeiro",
     "endereco": "Av. Manuel Caldeira de Alvarenga, 1203 - Inhoaíba, Rio de Janeiro",
@@ -600,7 +924,7 @@
     "lng": -43.5850
   },
   {
-    "id": 51,
+    "id": 78,
     "titulo": "MARICÁ COM LULA",
     "bairro": "Centro, Maricá",
     "endereco": "Praça Orlando de Barros Pimenta - Centro, Maricá",
@@ -612,7 +936,7 @@
     "lng": -42.8186
   },
   {
-    "id": 52,
+    "id": 79,
     "titulo": "BANGU CONTRA O BOLSONARO! ATO PELA DEMOCRACIA",
     "bairro": "Bangu, Rio de Janeiro",
     "endereco": "Praça Primeiro de Maio, s/n - Bangu, Rio de Janeiro",
@@ -624,7 +948,7 @@
     "lng": -43.4680
   },
   {
-    "id": 53,
+    "id": 80,
     "titulo": "CONVOCA BAIXADA",
     "bairro": "Centro, Duque de Caxias",
     "endereco": "Praça do Pacificador – Centro, Duque de Caxias",
@@ -636,7 +960,7 @@
     "lng": -43.3090
   },
   {
-    "id": 54,
+    "id": 81,
     "titulo": "MOBILIZAÇÃO POPULAR PACIFISTA",
     "bairro": "Itaipuaçu, Maricá",
     "endereco": "Av. Zumbi dos Palmares - Itaipuaçu, Maricá",
@@ -648,7 +972,7 @@
     "lng": -42.9400
   },
   {
-    "id": 55,
+    "id": 82,
     "titulo": "CONVOQUE RIO DE JANEIRO",
     "bairro": "Centro, Rio de Janeiro",
     "endereco": "Praça Pio X – Centro, Rio de Janeiro",
@@ -660,7 +984,7 @@
     "lng": -43.1775
   },
   {
-    "id": 56,
+    "id": 83,
     "titulo": "CONVOQUE RIO DE JANEIRO (UFRJ)",
     "bairro": "Cidade Universitária, Rio de Janeiro",
     "endereco": "Ilha do Fundão - Cidade Universitária",
@@ -672,7 +996,7 @@
     "lng": -43.2285
   },
   {
-    "id": 57,
+    "id": 84,
     "titulo": "ATO COLEGIAL LICEU",
     "bairro": "Centro, Niterói",
     "endereco": "Av. Ernani do Amaral Peixoto, 707 - Centro, Niterói",
