@@ -31,6 +31,24 @@
 </head>
 <body class="bg-black min-h-screen flex justify-center text-black m-0 p-0 pb-12">
 
+    <!-- Modal Pop-up Gigante / Redirecionamento -->
+    <div id="modal-redirecionamento" class="fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center p-4">
+        <div class="bg-red-700 border-8 border-black p-6 md:p-8 max-w-lg w-full text-center sombra-branca relative">
+            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tighter drop-shadow-[3px_3px_0px_#000] mb-4">
+                ATENÇÃO MILITÂNCIA!
+            </h2>
+            <p class="text-white font-bold text-lg md:text-xl leading-tight mb-6 bg-black p-4 border-4 border-white">
+                AGORA ESTAMOS USANDO A PLATAFORMA OFICIAL DA MOBILIZAÇÃO!
+            </p>
+            <a href="https://boralula.org/" target="_blank" class="block w-full bg-yellow-400 text-black font-bold text-2xl md:text-3xl py-4 border-4 border-black sombra-dura hover:bg-white transition-all mb-4">
+                ACESSE: BORALULA.ORG
+            </a>
+            <button onclick="document.getElementById('modal-redirecionamento').classList.add('hidden')" class="text-white text-xs md:text-sm font-bold underline hover:text-yellow-400">
+                CONTINUAR NO SITE ANTIGO
+            </button>
+        </div>
+    </div>
+
     <div class="w-full max-w-xl bg-red-700 min-h-screen border-x-4 border-black flex flex-col relative">
         
         <div class="p-6 bg-red-700 border-b-4 border-black flex-shrink-0">
@@ -79,5 +97,6 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js?v=4"></script></body>
+    <script src="app.js?v=5"></script>
+</body>
 </html>
